@@ -4,9 +4,47 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		.moviePic{
+			width: 300px;
+			height: 400px;
+			opacity: 0.9;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			/*transition: opacity 0.3s ease;*/
+		}
+		 .moviePic:hover {
+            opacity: 1;
+        }
+		.movieDetail{
+			position: relative;
+			top: 50%;
+			width: 60%;
+			text-align: center;
+			
+		}
+		.container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+	</style>
 </head>
 
 <body>
+	<div class="container">
+	<div class="moviePic">
+		<img src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp">
+	</div>
+	<div class="movieDetail">
+		<p>This ia action-thrill movie which was directed by Deepak Gupta.</p>
+	</div>
+	</div>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
